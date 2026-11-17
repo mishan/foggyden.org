@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PluralWare privacy policy</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header><a class="home" href="/">Foggy Den</a></header>
+  <main>
+    <!-- The same text as PRIVACY.md in the pluralware repository; change both together. -->
+    <h1>PluralWare privacy policy</h1>
+    <p>PluralWare is a phone and Wear OS app for <a href="https://pluralkit.me">PluralKit</a> systems, made by Misha
+      Nasledov. It has no accounts, ads or analytics, and sends nothing to its developer.</p>
+
+    <h2>What it handles, and where it goes</h2>
+    <ul>
+      <li><strong>Your PluralKit token</strong> is stored encrypted on your phone, and on your watch if you have one.
+        It goes from your phone to your watch and to PluralKit, and nowhere else.</li>
+      <li><strong>Your system's data</strong> (members, switches) is read from and written to PluralKit, at your
+        request, over HTTPS. The apps keep a little of it on the device to show it quickly: the members list, and the
+        current fronters for the widget, complication and tile.</li>
+      <li><strong>Friend notifications</strong>, if you share switches, name only the members you choose; anyone else
+        in front shows as "someone". Sharing tells friends who's fronting even if your front is private in PluralKit.
+        Only the friends you add hear anything.
+        <ul>
+          <li>Private notifications are end-to-end encrypted. The push service that delivers them can't read
+            them.</li>
+          <li>Simple (ntfy) notifications can be read by whoever runs the ntfy server.</li>
+          <li>Discord channel posts are read by Discord and by everyone in the channel, and they stay there. The
+            webhook link is stored encrypted on your devices.</li>
+        </ul>
+      </li>
+      <li><strong>A relay</strong>, if you host one, holds your friends' follow codes, any Discord webhooks you
+        added, and the names of the members you chose to share. It never holds your PluralKit token. It runs on a
+        server you control.</li>
+      <li><strong>Following friends</strong> uses UnifiedPush and the distributor app you choose (such as ntfy).</li>
+    </ul>
+    <p>Nothing is backed up or transferred to a new device: the encryption key never leaves the device.
+      Disconnecting in the app's settings deletes your token and sharing settings; uninstalling deletes everything it
+      stored.</p>
+
+    <h2>Contact</h2>
+    <p>Questions go to the <a href="https://github.com/mishan/pluralware/issues">issue tracker</a>.</p>
+  </main>
+  <footer><a href="/pluralware/">PluralWare</a> · <a href="/">Foggy Den</a></footer>
+</body>
+</html>
