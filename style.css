@@ -55,7 +55,7 @@ a { color: var(--accent); }
 .hexline { --c: var(--hexline); }
 .shots { display: flex; gap: 12px; overflow-x: auto; padding: 4px 0 12px; }
 .shots img { height: 360px; width: auto; border-radius: 14px; border: 1px solid var(--line); flex: none; }
-.shots img.watch { height: 200px; border-radius: 50%; align-self: center; }
+.shots img.watch { height: 180px; border-radius: 50%; border: none; }
 .note { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px 16px; color: var(--muted); }
 footer { color: var(--muted); font-size: 0.9rem; padding-top: 2.5rem; padding-bottom: 2.5rem; }
 footer a { color: var(--muted); }
